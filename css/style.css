@@ -53,10 +53,16 @@ h1,h2,h3 {
 
 .nav {
   display: flex;
+  align-items: center;
   gap: 24px;
+  height: 70px;
 }
+ 
 
 .nav a {
+  display: flex;
+  align-items: center;
+  height: 100%;
   text-decoration: none;
   color: #333;
   font-weight: 500;
@@ -69,6 +75,7 @@ h1,h2,h3 {
   border-radius: 8px;
   text-decoration: none;
 }
+
 
 .logo {
   display: flex;
@@ -163,13 +170,38 @@ h1,h2,h3 {
 }
 
 .section {
-  padding: 100px 0;
+  padding: 60px 0;
 }
+
+.section p {
+  margin-bottom: 0;
+  max-width: 640px;
+  line-height: 1.6;
+}
+
+.section-intro {
+  text-align: left; /* o center si te gusta más */
+}
+
+.btn-primary {
+  color: white !important;
+}
+
 
 .section h2 {
   font-size: 40px;
   color: var(--verde);
   margin-bottom: 24px;
+}
+
+/* sección introductoria (hero de páginas internas) */
+.section-intro {
+  padding: 120px 0 60px;
+}
+
+/* sección de contenido */
+.section-content {
+  padding: 40px 0 80px;
 }
 
 .grid-3 {
@@ -190,6 +222,8 @@ h1,h2,h3 {
   background: var(--verde);
   color: white;
   text-align: center;
+  padding: 120px 0;
+
 }
 
 .cta h2 {
@@ -209,3 +243,33 @@ h1,h2,h3 {
   padding: 40px 0;
   margin-top: 80px;
 }
+
+.cta .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .cta .container {
+    gap: 20px;
+    text-align: center;
+  }
+}
+
+.cta .btn-primary {
+  margin-top: 4px;
+}
+
+.cta p {
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.btn-primary:hover {
+  background: var(--oliva);
+  transform: translateY(-2px);
+  transition: 0.3s ease;
+}
+
