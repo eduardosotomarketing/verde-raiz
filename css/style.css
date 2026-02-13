@@ -17,6 +17,7 @@ body {
   font-family: 'Poppins', sans-serif;
   background: var(--crema);
   color: #333;
+  overflow-x: hidden;
 }
 
 h1,h2,h3 {
@@ -90,6 +91,12 @@ h1,h2,h3 {
 .logo img {
   height: 40px;   /* ajusta según tu logo */
   width: auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 
